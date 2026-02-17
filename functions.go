@@ -20,4 +20,9 @@ func main2() {
 		return
 	}
 	fmt.Println(result)
+
+	var number int = 10
+	var number_add *int = &number
+	fmt.Println(number_add)
+
 }
