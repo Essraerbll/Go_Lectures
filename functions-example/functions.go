@@ -13,7 +13,13 @@ func divide(dividend, divisor float64) (float64, error) {
 	return result, nil
 }
 
-func main2() {
+func modifyValue(value *int) {
+	*value += 5
+}
+
+
+
+func main() {
 	result, err := divide(10, 5)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -25,4 +31,8 @@ func main2() {
 	var number_add *int = &number
 	fmt.Println(number_add)
 
+	modifyValue(number_add)
+	fmt.Println(number)
+
 }
+//
